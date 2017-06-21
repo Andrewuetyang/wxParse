@@ -125,6 +125,12 @@ view{
     line-height: 20px;
 }
 
+.wxParse-no-li-style .wxParse-li-circle,
+.wxParse-no-li-style .wxParse-li-square,
+.wxParse-no-li-style .wxParse-li-ring,{
+    display: none;
+}
+
 .wxParse-li-circle{
     display: inline-flex;
     width: 5px;

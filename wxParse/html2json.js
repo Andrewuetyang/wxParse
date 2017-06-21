@@ -108,6 +108,8 @@ function html2json(html, bindName) {
                     // make it array of attribute
                     if (name == 'style') {
                         console.dir(value);
+                        // fixed cannot set inline style of 'list-style-type: none' of ul
+                        if (value.indexOf('list-style-type: none') !== -1 && tag === 'ul') node.noListStyleClass = 'wxParse-no-li-style';
                         //  value = value.join("")
                         node.styleStr = value;
                     }

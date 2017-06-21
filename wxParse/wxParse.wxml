@@ -98,7 +98,7 @@
 
         <!--其他块级标签-->
         <block wx:elif="{{item.tagType == 'block'}}">
-            <view class="{{item.classStr}} wxParse-{{item.tag}}" style="{{item.styleStr}}">
+            <view class="{{item.classStr}} {{item.noListStyleClass}} wxParse-{{item.tag}}" style="{{item.styleStr}}">
                 <block  wx:for="{{item.nodes}}" wx:for-item="item" wx:key="">       
                     <template is="wxParse1" data="{{item}}"/>                 
                 </block>
